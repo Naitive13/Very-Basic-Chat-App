@@ -1,0 +1,16 @@
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "description": "a simple chat application using Node.Js and Socket.IO",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "chat",
+    "socket.io"
+  ],
+  "author": "Naitive13",
+  "license": "ISC"
+}
