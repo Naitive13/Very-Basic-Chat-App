@@ -17,6 +17,10 @@ io.on("connection", (socket) => {
   socket.on("disconnect", () => {
     console.log("a user dicsconnected");
   });
+
+  socket.on("chat message", (msg) => {
+    console.log("==> " + msg);
+  });
 });
 
 // in case we have an error
