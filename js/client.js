@@ -17,4 +17,5 @@ socket.on("chat message", (msg) => {
   const new_message = document.createElement("li");
   new_message.textContent = msg;
   chat.appendChild(new_message);
+  chat.scrollTo(0, chat.scrollHeight);
 });
