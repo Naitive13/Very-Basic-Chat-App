@@ -113,3 +113,8 @@ form button:hover {
   cursor: pointer;
   border: 2px solid black;
 }
+
+form button:active {
+  color: white;
+  background: black;
+}
