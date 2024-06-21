@@ -87,6 +87,8 @@ main {
     margin-block: 30px;
     display: flex;
     flex-direction: column;
+    gap: 8px;
+    align-items: end;
     position: relative;
   }
 
@@ -94,16 +96,21 @@ main {
     list-style: none;
     width: fit-content;
     padding-inline: 1rem;
+    padding-block: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 2rem;
     border-radius: 12px;
     background: #777;
     color: #fff;
     font-weight: 500;
-    margin-bottom: 8px;
   }
+}
+
+.other_message {
+  background: #bbb;
+  color: #000;
+  align-self: flex-start;
 }
 
 /* animation area */

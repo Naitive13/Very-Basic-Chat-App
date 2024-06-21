@@ -14,13 +14,19 @@ app.get("/", (req, res) => {
 
 io.on("connection", (socket) => {
   console.log("a user connected");
+  socket.emit("your id", socket.id);
+
   socket.on("disconnect", () => {
     console.log("a user dicsconnected");
   });
 
-  socket.on("chat message", (msg) => {
-    console.log("==> " + msg);
-    io.emit("chat message", msg);
+  socket.on("chat message", (data) => {
+    console.log("msg : " + data);
+    console.log("from: " + socket.id);
+    io.emit("chat message", {
+      msg: data,
+      senderid: socket.id,
+    });
   });
 });
 
